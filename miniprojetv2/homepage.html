@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Titre</title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="referrer" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:image" content="">
+        <meta charset="utf-8">
+        <title>Miniprojet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <script type="module" src="assets/js/index.js"></script>
+
+    </head>
+
+    <body >
+        <header>
+            <section class="border-right">
+                <button id="side-menu-btn">
+                    <span class="bi-chevron-bar-left"></span>
+                </button>
+                <figure>
+                    <img src="https://res03.sites.3wa.io/assets/files/js/j5/demo/assets/logo.svg" alt="Logo représentant une rosace bleu et blanche">
+                </figure>
+            </section>
+            <nav></nav>
+        </header>
+        <main id="app">
+            <!--<aside>
+
+                <nav>
+                    <h2>Utilisateurs
+                        <span aria-hidden="true" class="bi-caret-down"></span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="">Liste des utilisateurs</a>
+                        </li>
+                        <li>
+                            <a href="">Ajouter un utilisateur</a>
+                        </li>
+                        <li>
+                            <a href="">statistiques utilisateurs</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2>Produits
+                        <span aria-hidden="true" class="bi-caret-down"></span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="">Liste des produits</a>
+                        </li>
+                        <li>
+                            <a href="">Ajouter un produit</a>
+                        </li>
+                        <li>
+                            <a href="">Statistiques des produits</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2>Catégories
+                        <span aria-hidden="true" class="bi-caret-down"></span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="">Liste des catégories de produits</a>
+                        </li>
+                        <li>
+                            <a href="">Ajouter une catégorie de produits</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </aside>
+            -->
+            <section id="user-tab">
+                <h2>Liste des utilisateurs</h2>
+                <section>
+                    <button class="add-btn" id="add-user-btn"><span class="bi-person-fill-add"></span> Ajouter un utilisateur</button>
+                </section>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    #
+                                </th>
+                                <th>
+                                    Nom
+                                </th>
+                                <th>
+                                    Age
+                                </th>
+                                <th>
+                                    Actif
+                                </th>
+                                <th>
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    Marsh Obrien
+                                </td>
+                                <td>
+                                    24
+                                </td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Marsh Obrien
+                                </td>
+                                <td>
+                                    24
+                                </td>
+                                <td>
+                                    <span class="bi-person-fill-up" aria-labelledby="Actif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="1"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section id="delete-modal" class="hidden">
+                <section id="confirm-delete">
+                    <h3>Êtes-vous sûr-e de vouloir supprimer cet utilisateur ?</h3>
+                    <h4 id="user-name">Nom d'utilisateur</h4>
+                    <section id="modal-btns">
+                        <button id="modal-cancel-btn">Annuler</button>
+                        <button id="modal-delete-btn">Supprimer</button>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
